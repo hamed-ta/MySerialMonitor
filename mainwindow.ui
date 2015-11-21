@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>My Serial Monitor</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_data">
+       <attribute name="title">
+        <string>Data</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox_settings">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QPlainTextEdit" name="TextEdit_char">
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="acceptDrops">
+                <bool>false</bool>
+               </property>
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="documentTitle">
+                <string notr="true"/>
+               </property>
+               <property name="undoRedoEnabled">
+                <bool>false</bool>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="plainText">
+                <string notr="true"/>
+               </property>
+               <property name="textInteractionFlags">
+                <set>Qt::TextSelectableByMouse</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPlainTextEdit" name="TextEdit_code">
+               <property name="font">
+                <font>
+                 <family>Tahoma</family>
+                </font>
+               </property>
+               <property name="acceptDrops">
+                <bool>false</bool>
+               </property>
+               <property name="toolTip">
+                <string notr="true"/>
+               </property>
+               <property name="statusTip">
+                <string notr="true"/>
+               </property>
+               <property name="whatsThis">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleName">
+                <string notr="true"/>
+               </property>
+               <property name="accessibleDescription">
+                <string notr="true"/>
+               </property>
+               <property name="undoRedoEnabled">
+                <bool>false</bool>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="backgroundVisible">
+                <bool>false</bool>
+               </property>
+               <property name="centerOnScroll">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QLabel" name="label_ports">
+                   <property name="text">
+                    <string>Ports :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_ports"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_Baud">
+                   <property name="text">
+                    <string>Baud :</string>
+                   </property>
+                   <property name="textFormat">
+                    <enum>Qt::AutoText</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Baud"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_Databit">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777214</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Data :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Databit"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_Parity">
+                   <property name="text">
+                    <string>Parity :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Parity"/>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_Stop">
+                   <property name="text">
+                    <string>Stop :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Stopbit"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_char">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Tahoma</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>TEXT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_lf">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>40</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="statusTip">
+                    <string>Line Feed Chars</string>
+                   </property>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_charwn">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>41</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Send Code Without Line Feed</string>
+                   </property>
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_char">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>41</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Send Code With Line Feed</string>
+                   </property>
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_char">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Interval</string>
+                   </property>
+                   <property name="minimum">
+                    <number>5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>100000</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_run1">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>16777214</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Repeatedly Send Line Code With Line Feed</string>
+                   </property>
+                   <property name="text">
+                    <string>Run</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_code">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="inputMask">
+                    <string>1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_code">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>41</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Send Integert Code</string>
+                   </property>
+                   <property name="text">
+                    <string>Send</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBox_code">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Interval</string>
+                   </property>
+                   <property name="minimum">
+                    <number>5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>100000</number>
+                   </property>
+                   <property name="value">
+                    <number>10</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_run2">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Repeatedly Send Integer Code</string>
+                   </property>
+                   <property name="text">
+                    <string>Run</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_graph">
+       <attribute name="title">
+        <string>Graph</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QCustomPlot" name="plot" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Open"/>
+   <addaction name="action_Close"/>
+   <addaction name="separator"/>
+   <addaction name="action_Clear"/>
+   <addaction name="separator"/>
+   <addaction name="action_Refresh"/>
+   <addaction name="separator"/>
+   <addaction name="action_export"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Open">
+   <property name="text">
+    <string>Open Port</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Port</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Close Port</string>
+   </property>
+   <property name="toolTip">
+    <string>Close port.</string>
+   </property>
+  </action>
+  <action name="action_Clear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="action_Refresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="action_export">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

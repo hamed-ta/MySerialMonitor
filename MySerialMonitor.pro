@@ -1,0 +1,23 @@
+#
+#                  in the name of Allah                    *
+#    My Serial Monitor Project by hamed tahery (hamed.t@live.com)     *
+#            19-7-92 - ‎Friday, ‎October ‎11, ‎2013            *
+#
+#***********************************************************
+QT       += core gui serialport
+#...................................................
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+#...................................................
+TARGET = MySerialMonitor
+TEMPLATE = app
+#...................................................
+SOURCES += main.cpp mainwindow.cpp qcustomplot.cpp \
+    myserial.cpp
+#...................................................
+HEADERS  += mainwindow.h qcustomplot.h \
+    myserial.h
+#...................................................
+FORMS    += mainwindow.ui
+#...................................................
+RC_FILE = RC.rc
+#...................................................
